@@ -7,8 +7,8 @@ import { Product } from './entities/product.entity';
 import { PaginationDTO } from 'src/common/dto/pagination.dto';
 import { IsUUID, isUUID } from 'class-validator';
 import { ProductImage } from './entities/productimage.entity';
-import { log } from 'console';
-import { map } from 'rxjs';
+
+
 @Injectable()
 export class ProductsService {
 

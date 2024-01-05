@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProductsModule } from './products/products.module';
 import { CommonModule } from './common/common.module';
+import { FilesModule } from './files/files.module';
 
 @Module({
   // eslint-disable-next-line prettier/prettier
@@ -16,7 +17,7 @@ import { CommonModule } from './common/common.module';
     password:process.env.DB_PASSWORD,
     autoLoadEntities:true,
     synchronize:true
-  }), ProductsModule, CommonModule],
+  }), ProductsModule, CommonModule, FilesModule],
   controllers: [],
   providers: [AppService],
 })
